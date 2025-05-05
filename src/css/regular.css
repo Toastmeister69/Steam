@@ -101,3 +101,21 @@ div.ModalPosition_TopBar {
 .window_resize_grip {
     opacity: 0 !important;
 }
+/* Move titlebar controls to the left */
+
+.title-area {
+    display: flex !important;
+    flex-direction: row-reverse; /* Moves buttons to the left */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-bar-actions {
+    order: -1; /* Moves the buttons to the start of the flex container */
+    margin-left: 8px; /* Adjust spacing if needed */
+}
+
+.title-area .title {
+    flex-grow: 1;
+    text-align: left;
+}
